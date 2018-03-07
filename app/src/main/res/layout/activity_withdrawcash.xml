@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:id="@+id/rootview"
+    android:background="@color/write"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+       <RelativeLayout
+           android:id="@+id/rl_title"
+           android:layout_width="match_parent"
+           android:layout_height="?attr/actionBarSize">
+           <ImageView
+               android:id="@+id/returns"
+               android:paddingLeft="@dimen/dimen_30dp"
+               android:layout_centerVertical="true"
+               android:src="@mipmap/return_black"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:id="@+id/tx_title"
+               android:textColor="@color/black"
+               android:textSize="@dimen/txtsize_42sp"
+               android:layout_centerInParent="true"
+               android:text="@string/str_purses"
+               style="@style/text" />
+           <TextView
+               android:layout_alignParentBottom="true"
+               style="@style/transverse_line" />
+       </RelativeLayout>
+
+   <com.fangfas.alincebusinessdaojobs.View.BounceScrollView
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <LinearLayout
+           android:gravity="center"
+           android:orientation="vertical"
+           android:background="@color/yellow2"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/dimen_360dp"
+           >
+           <TextView
+               android:gravity="center_horizontal"
+               android:text="@string/str_surplus"
+               android:textSize="@dimen/txtsize_42sp"
+               android:textColor="@color/write"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <LinearLayout
+               android:layout_marginTop="@dimen/dimen_30dp"
+               android:gravity="center"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:id="@+id/tx_balance"
+                   android:textColor="@color/write"
+                   android:text="0.00"
+                   android:textSize="@dimen/txtsize_60sp"
+                  style="@style/text" />
+               <TextView
+                   android:layout_marginLeft="@dimen/dimen_15dp"
+                   android:gravity="center_horizontal"
+                   android:text="@string/price_rmb"
+                   android:textSize="@dimen/txtsize_42sp"
+                   android:textColor="@color/write"
+                   style="@style/text" />
+           </LinearLayout>
+       </LinearLayout>
+    </RelativeLayout>
+
+
+   </com.fangfas.alincebusinessdaojobs.View.BounceScrollView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_cash"
+        android:elevation="@dimen/dimen_54dp"
+        app:cardCornerRadius="0dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="@color/yellow3"
+        android:layout_height="@dimen/dimen_150dp">
+        <TextView
+            android:textSize="@dimen/txtsize_39sp"
+            android:textColor="@color/write"
+            android:gravity="center"
+            android:text="@string/str_withdraw_cash"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v7.widget.CardView>
+</LinearLayout>

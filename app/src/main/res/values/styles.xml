@@ -1,0 +1,123 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--我的设置-->
+    <style name="my_rl">
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:background">@drawable/ripple_write</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_150dp</item>
+    </style>
+    <style name="enter_my">
+        <item name="android:src">@mipmap/enter</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="my_text">
+        <item name="android:layout_marginLeft">@dimen/dimen_30dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/hui2</item>
+        <item name="android:textSize">@dimen/txtsize_39sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="my_image">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="upright_line">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/huis</item>
+    </style>
+
+    
+    <style name="transverse_line">
+         <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/hui6</item>
+    </style>
+    <style name="text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="investment_line">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:background">@color/hui7</item>
+        <item name="android:layout_height">@dimen/dimen_150dp</item>
+    </style>
+    <style name="blue_line">
+        <item name="android:layout_marginLeft">@dimen/dimen_15dp</item>
+        <item name="android:layout_marginRight">@dimen/dimen_15dp</item>
+        <item name="android:background">@color/blue</item>
+        <item name="android:layout_width">@dimen/dimen_9dp</item>
+        <item name="android:layout_height">@dimen/dimen_45dp</item>
+    </style>
+    <style name="contract">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/txtsize_42sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="contract_title">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/txtsize_36sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="contract_intr">
+        <item name="android:layout_marginRight">@dimen/dimen_30dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:textColor">@color/hui2</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="contract_edit">
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginRight">@dimen/dimen_30dp</item>
+        <item name="android:textColor">@color/hui2</item>
+        <item name="android:textSize">@dimen/txtsize_36sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_100dp</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="contract_ll">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">@dimen/dimen_15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <!--自定义的弹窗-->
+
+
+    <style name="Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+
+
+
+</resources>

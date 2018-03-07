@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/ll"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+
+        <ImageView
+            android:id="@+id/returns"
+            android:background="@drawable/ripple_blue"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_30dp"
+            android:padding="@dimen/dimen_30dp"
+            android:src="@mipmap/returns1"
+            android:layout_width="@dimen/dimen_120dp"
+            android:layout_height="@dimen/dimen_120dp" />
+
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dimen_45dp"
+            android:layout_marginBottom="@dimen/dimen_45dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/ll_task_page"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/task_details"
+                android:textSize="@dimen/dimen_36dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/shape_home_check"
+                android:textColor="@color/blue"
+                android:text="@string/taskdetails"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dimen_30dp"
+                android:paddingRight="@dimen/dimen_30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/task_setbacks"
+                android:background="@drawable/shape_home_service"
+                android:textSize="@dimen/dimen_36dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/write"
+                android:text="@string/tasksetbacks"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dimen_30dp"
+                android:paddingRight="@dimen/dimen_30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <com.fangfas.alincebusinessdaojobs.View.NoScrollViewPager
+        android:id="@+id/pages"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

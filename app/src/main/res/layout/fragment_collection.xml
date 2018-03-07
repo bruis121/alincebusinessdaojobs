@@ -1,0 +1,83 @@
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/returns"
+            android:drawableLeft="@mipmap/returns1"
+            android:drawablePadding="@dimen/dimen_15dp"
+            android:textColor="@color/write"
+            android:text="@string/str_find"
+            android:gravity="center"
+            android:textSize="@dimen/txtsize_39sp"
+            android:background="@drawable/ripple_blue"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_marginTop="@dimen/dimen_45dp"
+            android:layout_marginBottom="@dimen/dimen_45dp"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/sales_collection"
+                android:textSize="@dimen/txtsize_36sp"
+                android:gravity="center_vertical"
+                android:background="@drawable/shape_home_check"
+                android:textColor="@color/blue"
+                android:text="@string/sales_collection"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dimen_30dp"
+                android:paddingRight="@dimen/dimen_30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/service_collection"
+                android:background="@drawable/shape_home_service"
+                android:textSize="@dimen/txtsize_36sp"
+                android:gravity="center_vertical"
+                android:textColor="@color/write"
+                android:text="@string/service_collection"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dimen_30dp"
+                android:paddingRight="@dimen/dimen_30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <com.fangfas.alincebusinessdaojobs.View.NoScrollViewPager
+        android:id="@+id/pager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="#cccccc"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation"
+        />
+
+</LinearLayout>

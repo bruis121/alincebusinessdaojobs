@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/huis"
+    android:layout_height="match_parent">
+
+
+   <android.support.design.widget.AppBarLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/dimen_120dp"
+       app:layout_scrollFlags="scroll|enterAlways"
+       >
+   <LinearLayout
+       android:id="@+id/ll_tab"
+       app:layout_scrollFlags="scroll|enterAlways"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+   <LinearLayout
+       android:background="@color/write"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <!--综合-->
+      <TextView
+          android:id="@+id/general"
+          android:layout_weight="1"
+          android:text="@string/general"
+          android:textColor="@color/bluex"
+          android:textSize="@dimen/txtsize_39sp"
+          android:background="@drawable/ripple"
+          android:gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+      <TextView
+          android:background="@color/huis"
+          android:layout_width="0.5dp"
+          android:layout_height="match_parent" />
+
+      <!--佣金-->
+      <TextView
+          android:id="@+id/commission"
+          android:layout_weight="1"
+          android:background="@drawable/ripple"
+          android:text="@string/commission"
+          android:gravity="center"
+          android:textColor="@color/bluex"
+          android:textSize="@dimen/txtsize_39sp"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+      <TextView
+          android:background="@color/huis"
+          android:layout_width="0.5dp"
+          android:layout_height="match_parent" />
+      <!--时间-->
+      <TextView
+          android:id="@+id/time"
+          android:layout_weight="1"
+          android:background="@drawable/ripple"
+          android:text="@string/time"
+          android:gravity="center"
+          android:textColor="@color/bluex"
+          android:textSize="@dimen/txtsize_39sp"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+   </LinearLayout>
+   <TextView
+       android:background="@color/huis"
+       android:layout_width="match_parent"
+       android:layout_height="0.5dp" />
+   </LinearLayout>
+   </android.support.design.widget.AppBarLayout>
+
+   <com.jcodecraeer.xrecyclerview.XRecyclerView
+       android:id="@+id/list"
+       app:layout_behavior="@string/appbar_scrolling_view_behavior"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layoutAnimation="@anim/list_anim_layout"/>
+
+</android.support.design.widget.CoordinatorLayout>

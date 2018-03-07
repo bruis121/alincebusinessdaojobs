@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+
+        <TextView
+            android:id="@+id/returns"
+            android:drawableLeft="@mipmap/returns1"
+            android:drawablePadding="@dimen/dimen_15dp"
+            android:textColor="@color/write"
+            android:text="@string/str_find"
+            android:textSize="@dimen/txtsize_36sp"
+            android:background="@drawable/ripple_blue"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_30dp"
+             android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_marginTop="@dimen/dimen_45dp"
+            android:layout_marginBottom="@dimen/dimen_45dp"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/sales"
+                android:textSize="@dimen/txtsize_36sp"
+                android:gravity="center_vertical"
+                android:background="@drawable/shape_home_check"
+                android:textColor="@color/blue"
+                android:text="@string/sales"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dimen_30dp"
+                android:paddingRight="@dimen/dimen_30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/service"
+                android:background="@drawable/shape_home_service"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:textColor="@color/write"
+                android:text="@string/service"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dimen_30dp"
+                android:paddingRight="@dimen/dimen_30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:background="@drawable/ripple_blue"
+            android:drawableRight="@mipmap/down"
+            android:drawablePadding="@dimen/dimen_15dp"
+            android:layout_marginLeft="@dimen/dimen_30dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/write"
+            android:textSize="12sp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dimen_30dp"
+            android:id="@+id/address"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+
+    <com.fangfas.alincebusinessdaojobs.View.NoScrollViewPager
+        android:id="@+id/pager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="#cccccc"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation"
+        />
+
+</LinearLayout>

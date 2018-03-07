@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <LinearLayout
+            android:background="#efeef4"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_300dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_margin="@dimen/dimen_24dp"
+                app:cardCornerRadius="@dimen/dimen_15dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="@color/write"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    style="@style/text">
+                    <TextView
+                        android:id="@+id/name"
+                        android:textColor="@color/bule2"
+                        android:textSize="@dimen/txtsize_36sp"
+                        android:layout_marginTop="@dimen/dimen_30dp"
+                        android:layout_marginLeft="@dimen/dimen_210dp"
+                        android:text="江苏洋河地之白陈列稽核"
+                        style="@style/text" />
+                   <LinearLayout
+                       android:id="@+id/ll_address"
+                       android:layout_below="@+id/name"
+                       android:layout_marginLeft="@dimen/dimen_30dp"
+                       android:layout_marginTop="@dimen/dimen_30dp"
+                       style="@style/text">
+                    <TextView
+                        android:id="@+id/text_category"
+                        android:textSize="@dimen/txtsize_36sp"
+                        android:textColor="@color/hui2"
+                        android:text="[张四烟酒]"
+                       style="@style/text" />
+                       <TextView
+                           android:layout_marginLeft="@dimen/dimen_15dp"
+                           android:textSize="@dimen/txtsize_36sp"
+                           android:textColor="@color/hui2"
+                           android:text="四川省成都市武侯区天府三街12号"
+                          style="@style/text"/>
+                   </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/time"
+                            android:layout_below="@+id/ll_address"
+                            android:layout_marginLeft="@dimen/dimen_30dp"
+                            android:layout_marginTop="@dimen/dimen_15dp"
+                            android:textColor="@color/blue"
+                            android:text="2016.07.13~09.16"
+                            android:textSize="12sp"
+                           style="@style/text" />
+
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:layout_alignBottom="@+id/ll_address"
+                        android:layout_marginRight="@dimen/dimen_15dp"
+                        android:orientation="horizontal"
+                        style="@style/text">
+                        <TextView
+                            android:text="30"
+                            android:textColor="@color/orange"
+                            android:textSize="@dimen/txtsize_54sp"
+                            style="@style/text"
+                            />
+                        <TextView
+                            android:layout_marginLeft="@dimen/dimen_15dp"
+                            android:text="@string/price_rmb"
+                            android:textSize="@dimen/txtsize_36sp"
+                            android:textColor="@color/blue3"
+                            style="@style/text" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_marginRight="@dimen/dimen_30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignBottom="@+id/time"
+                        android:textColor="@color/hui"
+                        android:textSize="@dimen/txtsize_36sp"
+                        android:text="编码：20161011-0001"
+                       style="@style/text" />
+                </RelativeLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_marginTop="@dimen/dimen_45dp"
+            android:layout_marginLeft="@dimen/dimen_12dp"
+           style="@style/text">
+            <TextView
+                android:id="@+id/yellow"
+                android:textSize="@dimen/txtsize_36sp"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="@color/write"
+                android:text="@string/investigation_task"
+                android:background="@mipmap/lhsd_yellow"
+              style="@style/text"
+                />
+            <TextView
+                android:id="@+id/green"
+                android:textSize="@dimen/txtsize_36sp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textColor="@color/write"
+                android:text="@string/other_task"
+                android:background="@mipmap/lhsd_green"
+                style="@style/text"
+                />
+            <TextView
+                android:id="@+id/blue"
+                android:textSize="@dimen/txtsize_36sp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textColor="@color/write"
+                android:text="@string/check_task"
+                android:background="@mipmap/lhsd_blue"
+               style="@style/text"
+                />
+        </FrameLayout>
+    </FrameLayout>
+
+</LinearLayout>

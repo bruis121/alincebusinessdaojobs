@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <!--android:layout_marginBottom="50dp"-->
+    <!--android:layout_marginTop="48dp"-->
+    <LinearLayout
+        android:id="@+id/da"
+        android:background="@color/write"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="360dp">
+        <!--顶部-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_120dp">
+            <TextView
+                android:textSize="@dimen/txtsize_42sp"
+                android:gravity="center"
+                android:text="所在地区"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_120dp" />
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_marginRight="@dimen/dimen_30dp"
+                android:textSize="@dimen/txtsize_42sp"
+                android:text="取消"
+                style="@style/text"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60dp">
+            <TextView
+                android:layout_gravity="bottom"
+                android:background="#ecedf0"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_57dp"
+                android:layout_marginLeft="@dimen/dimen_30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/address_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/addressb_country"
+                        android:textColor="@color/red_x"
+                        android:layout_marginRight="@dimen/dimen_15dp"
+                        android:textSize="@dimen/txtsize_36sp" />
+                    <TextView
+
+                        android:id="@+id/line_province"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/red_x" />
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:id="@+id/shi"
+                        android:text="选择市"
+                        android:layout_marginLeft="@dimen/dimen_15dp"
+                        android:layout_marginRight="@dimen/dimen_15dp"
+                        android:textSize="@dimen/txtsize_36sp"
+                        android:textColor="@color/red_x"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/line_city"
+                        android:layout_marginLeft="@dimen/dimen_15dp"
+                        android:layout_marginRight="@dimen/dimen_15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/red_x" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:id="@+id/qu"
+                        android:text="选择区"
+                        android:layout_marginLeft="@dimen/dimen_15dp"
+                        android:layout_marginRight="@dimen/dimen_15dp"
+                        android:textSize="@dimen/txtsize_36sp"
+                        android:textColor="@color/red_x"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/line_county"
+                        android:visibility="gone"
+                        android:layout_marginLeft="@dimen/dimen_15dp"
+                        android:layout_marginRight="@dimen/dimen_15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/red_x" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+        <ListView
+            android:id="@+id/address_list"
+            android:layout_width="match_parent"
+            android:divider="@null"
+            android:layout_height="match_parent" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

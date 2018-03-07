@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/hui8"
+    android:layout_height="match_parent">
+
+    <com.fangfas.alincebusinessdaojobs.View.BounceScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="@dimen/dimen_60dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="@dimen/txtsize_48sp"
+                android:textColor="@color/heise"
+                android:text="@string/zhaoshang1"
+                style="@style/text"/>
+            <TextView
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:textSize="@dimen/txtsize_36sp"
+                android:textColor="@color/heise"
+                android:text="@string/str_zs_recommended"
+                style="@style/text"
+                android:id="@+id/textView" />
+            <TextView
+                android:layout_marginTop="@dimen/dimen_60dp"
+                android:textSize="16sp"
+                android:textColor="@color/heise"
+                android:text="@string/zs_buzou2"
+                style="@style/text"/>
+            <TextView
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:drawablePadding="@dimen/dimen_15dp"
+                android:drawableLeft="@mipmap/jieshao1"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/txtsize_36sp"
+                android:textColor="@color/heise"
+                android:text="@string/str_caozuo1"
+                style="@style/text" />
+
+            <LinearLayout
+                android:paddingTop="@dimen/dimen_30dp"
+                android:orientation="horizontal"
+               style="@style/text">
+                <ImageView
+                    android:paddingTop="@dimen/dimen_15dp"
+                    android:layout_marginRight="@dimen/dimen_15dp"
+                    android:src="@mipmap/jieshao2"
+                    style="@style/text" />
+                <TextView
+                    android:id="@+id/tx_2"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    android:gravity="center_vertical"
+                    style="@style/text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="@dimen/dimen_30dp"
+                android:orientation="horizontal"
+               style="@style/text">
+                <ImageView
+                    android:paddingTop="@dimen/dimen_15dp"
+                    android:layout_marginRight="@dimen/dimen_15dp"
+                    android:src="@mipmap/jieshao3"
+                    style="@style/text" />
+                <TextView
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/zhidao3"
+                    android:textSize="@dimen/txtsize_36sp"
+                    android:textColor="@color/heise"
+                    style="@style/text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="@dimen/dimen_30dp"
+                android:orientation="horizontal"
+               style="@style/text">
+                <ImageView
+                    android:paddingTop="@dimen/dimen_15dp"
+                    android:layout_marginRight="@dimen/dimen_15dp"
+                    android:src="@mipmap/jieshao4"
+                    style="@style/text" />
+                <TextView
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/zhidao4"
+                    android:textSize="@dimen/txtsize_36sp"
+                    android:textColor="@color/heise"
+                    style="@style/text" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tx_price"
+                android:layout_marginLeft="@dimen/dimen_60dp"
+                android:layout_marginTop="@dimen/dimen_60dp"
+                android:textColor="@color/red"
+                android:textSize="@dimen/txtsize_36sp"
+                android:text="@string/zs"
+                style="@style/text" />
+        </LinearLayout>
+    </com.fangfas.alincebusinessdaojobs.View.BounceScrollView>
+</LinearLayout>

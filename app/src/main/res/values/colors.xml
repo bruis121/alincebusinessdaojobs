@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blue">#1bb7e4</color>
+    <color name="bluex">#7a8598</color>
+    <color name="write">#ffffff</color>
+    <color name="font_black_5">#bdbdbd</color>
+    <color name="tx">#f5f5f7</color>
+    <color name="hui">#999999</color>
+    <color name="red_x">#e21b15</color>
+    <color name="red_x1">#ed5628</color>
+    <color name="heise">#333333</color>
+    <color name="huis">#efeef4</color>
+    <color name="hui3">#ffd0d0d0</color>
+    <color name="half_transparent">#8f000000</color>
+    <color name="font_black_6">#e0e0e0</color>
+    <color name="bule2">#344a6b</color>
+    <color name="hui2">#666666</color>
+    <color name="orange">#ff7426</color>
+    <color name="orange1">#ff6600</color>
+    <color name="blue3">#01204f</color>
+    <color name="hui6">#eaeaea</color>
+    <color name="hui15">#bfbfbf</color>
+    <color name="yellow1">#ffcc00</color>
+    <color name="yellow2">#f6b804</color>
+    <color name="yellow3">#fecb2e</color>
+    <color name="hui4">#cacaca</color>
+    <color name="hui7">#dddddd</color>
+    <color name="black">#000000</color>
+    <color name="black1">#404040</color>
+    <color name="blue4">#495b77</color>
+    <color name="hui8">#f3f3f3</color>
+    <color name="hui9">#e6e6e6</color>
+    <color name="blue5">#031f4e</color>
+    <color name="blue6">#f1fcfe</color>
+    <color name="red">#cc0000</color>
+    <color name="blue7">#32496b</color>
+    <color name="hui5">#cccccc</color>
+    <color name="hui10">#bababa</color>
+    <color name="hui11">#f9f9f9</color>
+     <color name="hui12">#8e8e8e</color>
+    <color name="hui13">#f5f5f5</color>
+    <color name="hui14">#c7c7c7</color>
+    <color name="black2">#414141</color>
+    <color name="black3">#181119</color>
+    <color name="black4">#323232</color>
+    <color name="blue_11">#f1fcff</color>
+    <color name="province_line_border">#C7C7C7</color>
+
+    <!-- 暗灰色 -->
+    <color name="dimgrey">#696969</color>
+    <!-- 灰色 -->
+    <color name="gray">#808080</color>
+    <color name="floralwhite">#FFFAF0</color>
+    <color name="grey">#808080</color>
+
+
+
+</resources>

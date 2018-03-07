@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <LinearLayout
+       android:id="@+id/ll_1"
+       android:background="@color/write"
+       android:orientation="horizontal"
+       android:paddingLeft="@dimen/dimen_30dp"
+       android:paddingRight="@dimen/dimen_30dp"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/dimen_150dp">
+
+       <TextView
+           android:textSize="@dimen/txtsize_36sp"
+           android:gravity="center_vertical"
+           android:textColor="@color/hui2"
+           android:text="@string/str_realname"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:id="@+id/textView10" />
+
+       <EditText
+           android:id="@+id/tx1_content"
+           android:background="@null"
+           android:hint="@string/hint21"
+           android:textColor="@color/hui2"
+           android:textSize="@dimen/txtsize_36sp"
+           android:gravity="center_vertical|right"
+           android:layout_weight="1"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" />
+   </LinearLayout>
+
+    <TextView
+        android:id="@+id/line1"
+        style="@style/transverse_line" />
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_choose"
+        android:background="@drawable/ripple_write"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimen_30dp"
+        android:paddingRight="@dimen/dimen_30dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_150dp">
+
+        <TextView
+            android:id="@+id/tx2_title"
+            android:layout_weight="1"
+            android:textSize="@dimen/txtsize_36sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/hui2"
+            android:text="@string/str_realname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+
+
+        <TextView
+            android:id="@+id/tx_choose"
+            android:textSize="@dimen/txtsize_36sp"
+            android:drawablePadding="@dimen/dimen_15dp"
+            android:textColor="@color/hui2"
+            android:drawableRight="@mipmap/enter1"
+            style="@style/text"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/line2"
+        style="@style/transverse_line" />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:background="@color/write"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimen_30dp"
+        android:paddingRight="@dimen/dimen_30dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_150dp">
+
+        <TextView
+            android:id="@+id/tx3_title"
+            android:textSize="@dimen/txtsize_36sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/hui2"
+            android:text="@string/str_alipayname"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+           />
+
+        <EditText
+            android:id="@+id/et3_content"
+            android:background="@null"
+            android:hint="@string/hint22"
+            android:textColor="@color/hui2"
+            android:textSize="@dimen/txtsize_36sp"
+            android:gravity="center_vertical|right"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

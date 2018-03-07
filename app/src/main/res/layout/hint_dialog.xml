@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_margin="@dimen/dimen_60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_write"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_120dp"
+            android:textSize="@dimen/txtsize_60sp"
+            android:textColor="@color/black4"
+            android:gravity="center"
+            android:visibility="visible" />
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center" >
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:lineSpacingMultiplier="1.5"
+                android:minHeight="@dimen/dimen_240dp"
+                android:paddingBottom="@dimen/dimen_45dp"
+                android:paddingLeft="@dimen/dimen_60dp"
+                android:textColor="@color/hui2"
+                android:background="@color/write"
+                android:paddingRight="@dimen/dimen_60dp"
+                android:paddingTop="@dimen/dimen_45dp" />
+        </LinearLayout>
+        <View
+           style="@style/transverse_line" />
+        <LinearLayout
+            android:background="@color/write"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_120dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+
+            <Button
+                android:id="@+id/negativeButton"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:textColor="@color/blue"
+                android:background="@drawable/ripple"
+
+                />
+            <TextView
+               style="@style/upright_line" />
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/positiveButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/blue"
+                android:background="@null"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

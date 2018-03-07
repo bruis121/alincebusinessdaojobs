@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/huis"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_200dp">
+
+     <ImageView
+         android:id="@+id/image"
+         android:layout_width="@dimen/dimen_45dp"
+         android:layout_height="@dimen/dimen_45dp"
+         android:layout_marginLeft="@dimen/dimen_75dp"
+         android:src="@mipmap/progress_no" />
+
+     <View
+         android:id="@+id/line_normal"
+         android:layout_width="1dp"
+         android:layout_height="@dimen/dimen_180dp"
+         android:layout_alignBaseline="@+id/image"
+         android:layout_below="@+id/image"
+         android:layout_marginLeft="@dimen/dimen_90dp"
+         android:background="@color/hui7" />
+
+
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_marginStart="17dp"
+            android:layout_below="@+id/image"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:orientation="horizontal"
+            android:layout_toEndOf="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+            android:id="@+id/show_title"
+             android:text="测试数据1"
+            android:textSize="@dimen/txtsize_36sp"
+            style="@style/text"/>
+
+
+            <TextView
+            android:layout_marginLeft="@dimen/dimen_90dp"
+            android:textSize="@dimen/txtsize_36sp"
+            android:text="2016-6-29"
+            android:minWidth="@dimen/dimen_180dp"
+            style="@style/text"
+            android:id="@+id/time" />
+
+
+            <TextView
+                android:layout_marginLeft="@dimen/dimen_90dp"
+                android:id="@+id/show_state"
+                style="@style/text"
+                android:text="测试数据"
+                android:textSize="@dimen/txtsize_36sp"
+                />
+
+
+            <TextView
+                android:visibility="gone"
+                android:textColor="@color/blue"
+                android:layout_marginLeft="@dimen/dimen_60dp"
+                android:id="@+id/show_look"
+                style="@style/text"
+                android:drawableLeft="@mipmap/photo"
+                android:text="查看"
+                android:textSize="@dimen/txtsize_36sp"
+                />
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+         android:layout_marginBottom="@dimen/dimen_30dp"
+         android:layout_alignParentBottom="true"
+         android:layout_marginTop="@dimen/dimen_15dp"
+         style="@style/transverse_line"
+         android:layout_alignStart="@+id/ll" />
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/hui11"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="@dimen/dimen_30dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+   <ImageView
+       android:layout_weight="0.8"
+       android:src="@mipmap/logistical"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/dimen_210dp" />
+    <LinearLayout
+        android:paddingLeft="@dimen/dimen_30dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_210dp">
+        <TextView
+            android:textSize="@dimen/txtsize_48sp"
+            android:textColor="@color/heise"
+            android:text="物流公司：顺丰物流"
+            style="@style/text" />
+        <TextView
+            android:id="@+id/tx_orders"
+            android:paddingTop="@dimen/dimen_15dp"
+            android:textSize="@dimen/txtsize_36sp"
+            android:textColor="@color/hui2"
+            style="@style/text" />
+        <LinearLayout
+            android:orientation="horizontal"
+            style="@style/text">
+            <TextView
+                android:paddingTop="@dimen/dimen_15dp"
+                android:textSize="12sp"
+                android:textColor="@color/hui2"
+                android:text="@string/str_logistical_phone"
+                style="@style/text" />
+            <TextView
+                android:id="@+id/tel"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:textColor="@color/blue"
+                android:text="40095865415"
+               style="@style/text" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+
+    <!--空格线-->
+    <TextView
+        android:background="@color/huis"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_30dp"/>
+
+    <TextView
+        android:textColor="@color/heise"
+        android:textSize="@dimen/txtsize_54sp"
+        android:layout_margin="@dimen/dimen_30dp"
+        android:text="@string/str_orders_track"
+        style="@style/text"/>
+
+</LinearLayout>

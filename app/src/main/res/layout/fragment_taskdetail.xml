@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical"
+    android:id="@+id/ll"
+    >
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.fangfas.alincebusinessdaojobs.View.MyScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:background="@color/write"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_header"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.fangfas.alincebusinessdaojobs.View.CommodityImage
+                        android:id="@+id/imge"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"/>
+
+                    <include layout="@layout/fragment_taskdatails_detail" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/rg_snapbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+
+
+                    <RadioButton
+
+                        android:id="@+id/btn_tab1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:background="@drawable/btn_taskdetail_tab_selector"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="@string/product"
+                        android:textColor="@drawable/taskdetail_top" />
+
+
+
+
+                    <RadioButton
+
+                        android:id="@+id/btn_tab2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_taskdetail_tab_selector"
+                        android:textColor="@drawable/taskdetail_top"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/parameter"
+                        />
+
+
+                    <RadioButton
+
+                        android:id="@+id/btn_tab3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/percentage1"
+                        android:background="@drawable/btn_taskdetail_tab_selector"
+                        android:textColor="@drawable/taskdetail_top"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/btn_tab4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/attract_investment"
+                        android:background="@drawable/btn_taskdetail_tab_selector"
+                        android:textColor="@drawable/taskdetail_top"
+                        />
+                </RadioGroup>
+
+
+                <com.fangfas.alincebusinessdaojobs.View.MyViewPager
+                    android:id="@+id/vp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </com.fangfas.alincebusinessdaojobs.View.MyScrollView>
+
+        <RadioGroup
+            android:id="@+id/rg_snapbar_top"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="4">
+
+            <RadioButton
+                android:id="@+id/btn_tab1_top"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/product"
+                android:background="@drawable/btn_taskdetail_tab_selector"
+                android:textColor="@drawable/taskdetail_top"  />
+
+
+
+            <RadioButton
+                android:id="@+id/btn_tab2_top"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/parameter"
+                android:background="@drawable/btn_taskdetail_tab_selector"
+                android:textColor="@drawable/taskdetail_top" />
+
+
+
+            <RadioButton
+                android:id="@+id/btn_tab3_top"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/percentage1"
+                android:background="@drawable/btn_taskdetail_tab_selector"
+                android:textColor="@drawable/taskdetail_top" />
+
+            <RadioButton
+                android:id="@+id/btn_tab4_top"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/attract_investment"
+                android:background="@drawable/btn_taskdetail_tab_selector"
+                android:textColor="@drawable/taskdetail_top"
+                />
+
+        </RadioGroup>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_135dp">
+        <TextView
+            style="@style/transverse_line"/>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/receivetask"
+                android:layout_weight="0.3"
+                app:cardCornerRadius="0dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/red_x"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:drawablePadding="5dp"
+                    android:textColor="@color/write"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/receivetask_tx"
+                    android:drawableLeft="@mipmap/receive_task"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tx_receivetask" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/collection"
+                android:layout_weight="0.7"
+                app:cardCornerRadius="0dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/write"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imge_collection"
+                        android:src="@mipmap/collection_hei"
+                        style="@style/text" />
+                    <TextView
+                        android:textColor="@color/hui2"
+                        android:textSize="13sp"
+                        android:text="@string/collection_tex"
+                        android:layout_gravity="center_vertical"
+                        style="@style/text"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

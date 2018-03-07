@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/swipe_container"
+    android:layout_width="match_parent"
+    android:background="@color/huis"
+    android:layout_height="match_parent">
+
+   <RelativeLayout
+       android:background="@color/blue"
+       android:layout_width="match_parent"
+       android:layout_height="?attr/actionBarSize">
+    <TextView
+        android:id="@+id/title"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/txtsize_42sp"
+        android:textColor="@color/write"
+        android:text="@string/setting"
+        style="@style/text" />
+   </RelativeLayout>
+
+    <com.fangfas.alincebusinessdaojobs.View.BounceScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_marginTop="@dimen/dimen_60dp"
+        android:background="@color/hui6"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_15dp" />
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="0dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/dimen_15dp"
+        card_view:cardBackgroundColor="@color/write">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/dimen_280dp">
+                <TextView
+                   style="@style/text"
+                    android:layout_above="@+id/image_header"
+                    android:layout_alignStart="@+id/image_header"
+                    android:id="@+id/text1" />
+
+
+                <LinearLayout
+                   android:layout_marginLeft="@dimen/dimen_30dp"
+                   android:layout_centerVertical="true"
+                   android:layout_toEndOf="@id/image_header"
+                   android:orientation="vertical"
+                    style="@style/text"
+                   android:id="@+id/linearLayout">
+               <TextView
+                   android:textSize="@dimen/txtsize_39sp"
+                   android:textColor="@color/heise"
+                   style="@style/text"
+                   android:id="@+id/name" />
+                   <TextView
+                       android:id="@+id/tx_grades"
+                       android:layout_marginTop="@dimen/dimen_30dp"
+                       android:textColor="@color/hui"
+                       android:textSize="@dimen/txtsize_36sp"
+                       style="@style/text" />
+               </LinearLayout>
+
+
+               <android.support.v7.widget.CardView
+                   android:id="@+id/cv_qualification"
+                   app:cardCornerRadius="@dimen/dimen_15dp"
+                   android:foreground="?android:attr/selectableItemBackground"
+                   android:layout_width="@dimen/dimen_210dp"
+                   android:layout_marginRight="@dimen/dimen_60dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_height="@dimen/dimen_90dp">
+                   <TextView
+                       android:id="@+id/tx_qualification"
+                       android:textColor="@color/write"
+                       android:text="@string/authentication"
+                       android:gravity="center"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent" />
+               </android.support.v7.widget.CardView>
+
+                <ImageView
+                   android:id="@+id/image_header"
+                    android:layout_marginLeft="@dimen/dimen_60dp"
+                   android:transitionName="robot"
+                   android:scaleType="fitXY"
+                   android:layout_width="@dimen/dimen_150dp"
+                   android:layout_height="@dimen/dimen_150dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:background="@color/hui6"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+          <RelativeLayout
+              android:id="@+id/tx_withdraw_cash"
+              style="@style/my_rl">
+              <TextView
+                  android:id="@+id/tx_purse"
+                  android:textSize="@dimen/txtsize_33sp"
+                  android:layout_centerVertical="true"
+                  android:text="@string/str_purse"
+                  style="@style/text"/>
+              <TextView
+                  android:id="@+id/tx_purse_balance"
+                  android:textStyle="bold"
+                  android:textSize="@dimen/txtsize_39sp"
+                  android:layout_marginLeft="@dimen/dimen_30dp"
+                  android:layout_centerVertical="true"
+                  android:textColor="@color/orange1"
+                  style="@style/text"
+                  android:layout_toEndOf="@id/tx_purse"
+                  />
+              <TextView
+                 android:layout_marginLeft="@dimen/dimen_15dp"
+                  android:textSize="@dimen/txtsize_36sp"
+                  android:layout_centerVertical="true"
+                  android:layout_toEndOf="@id/tx_purse_balance"
+                  android:text="@string/price_rmb"
+                  style="@style/text" />
+
+              <TextView
+                  android:textColor="@color/blue"
+                  android:background="@drawable/ripple_write"
+                  android:textSize="@dimen/txtsize_42sp"
+                  android:layout_centerVertical="true"
+                  android:layout_alignParentRight="true"
+                  android:text="@string/str_withdraw_cash"
+                  style="@style/text" />
+          </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:background="@color/hui6"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+
+    <TextView
+        android:layout_marginTop="@dimen/dimen_60dp"
+        android:background="@color/hui6"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <android.support.v7.widget.CardView
+    app:cardCornerRadius="0dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="@dimen/dimen_15dp"
+    card_view:cardBackgroundColor="@color/write">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <!--认证资料-->
+    <RelativeLayout
+        android:id="@+id/authentication"
+        style="@style/my_rl">
+        <ImageView
+            android:id="@+id/authenticationimage"
+            style="@style/my_image"
+            android:src="@mipmap/authentication_image"
+            />
+        <TextView
+            style="@style/my_text"
+            android:layout_toEndOf="@+id/authenticationimage"
+            android:text="@string/authentication_data"
+            />
+        <ImageView
+            style="@style/enter_my"
+            android:src="@mipmap/enter"
+             />
+    </RelativeLayout>
+    <TextView
+        android:background="@color/hui6"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+    <RelativeLayout
+        android:id="@+id/timejobs"
+        style="@style/my_rl">
+        <ImageView
+            android:id="@+id/timejobs_mage"
+            android:src="@mipmap/my_part_timejobs"
+            style="@style/my_image" />
+        <TextView
+            android:layout_toEndOf="@+id/timejobs_mage"
+            android:text="@string/timejobs_text"
+            style="@style/my_text" />
+        <ImageView
+            style="@style/enter_my" />
+
+    </RelativeLayout>
+    <TextView
+        android:background="@color/hui6"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <RelativeLayout
+        android:id="@+id/mytask"
+        style="@style/my_rl">
+        <ImageView
+            android:id="@+id/mytaskmage"
+           android:src="@mipmap/my_task_mage"
+           style="@style/my_image"/>
+        <TextView
+            android:layout_toEndOf="@+id/mytaskmage"
+            android:text="@string/my_task_text"
+            style="@style/my_text"/>
+        <ImageView
+           style="@style/enter_my" />
+
+    </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:background="@color/hui6"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_severce"
+        app:cardCornerRadius="0dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_150dp"
+        app:contentPaddingLeft="@dimen/dimen_60dp"
+        app:contentPaddingRight="@dimen/dimen_60dp"
+        app:cardElevation="@dimen/dimen_15dp"
+        card_view:cardBackgroundColor="@color/write">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                style="@style/my_image"
+                android:id="@+id/retrun_business_image"
+                android:src="@mipmap/service" />
+            <TextView
+                style="@style/my_text"
+                android:layout_toEndOf="@+id/retrun_business_image"
+                android:text="@string/str_severce" />
+
+            <TextView
+                android:textColor="@color/hui10"
+                android:textSize="@dimen/txtsize_36sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="4000-028-999"
+                style="@style/text"
+                 />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:background="@color/hui6"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/retrun_business"
+            android:layout_margin="@dimen/dimen_60dp"
+            app:cardCornerRadius="@dimen/dimen_30dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_135dp"
+            app:cardElevation="@dimen/dimen_15dp"
+            card_view:cardBackgroundColor="@color/blue">
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/write"
+                android:text="@string/retrun_business_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    </com.fangfas.alincebusinessdaojobs.View.BounceScrollView>
+</LinearLayout>

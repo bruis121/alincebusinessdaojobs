@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/hui11"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:id="@+id/returns"
+            android:onClick="returns"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/returns"
+            android:background="@drawable/ripple_blue"
+            android:layout_marginLeft="@dimen/dimen_30dp"
+            android:padding="@dimen/dimen_30dp"
+            android:layout_width="@dimen/dimen_120dp"
+            android:layout_height="@dimen/dimen_120dp"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_centerInParent="true"
+            android:text="@string/str_look_logistical"
+            android:textSize="@dimen/txtsize_42sp"
+            android:textColor="@color/write"
+            style="@style/text" />
+        <TextView
+            android:id="@+id/lookinvoices"
+           android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:layout_marginRight="@dimen/dimen_30dp"
+            android:text="@string/look_invoices"
+            android:textSize="@dimen/txtsize_36sp"
+            android:textColor="@color/write"
+            />
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/list"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

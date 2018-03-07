@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/huis"
+    android:id="@+id/ll_contract"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:id="@+id/returns"
+            android:onClick="returns"
+            android:src="@mipmap/returns"
+            android:background="@drawable/ripple_blue"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_30dp"
+            android:padding="@dimen/dimen_30dp"
+            android:layout_width="@dimen/dimen_120dp"
+            android:layout_height="@dimen/dimen_120dp" />
+        <TextView
+            android:id="@+id/title"
+            android:textSize="@dimen/txtsize_42sp"
+            android:textColor="@color/write"
+            android:text="@string/activity_contract"
+            android:layout_centerInParent="true"
+            style="@style/text" />
+    </RelativeLayout>
+    <com.fangfas.alincebusinessdaojobs.View.BounceScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--客户信息-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:background="@color/write"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    style="@style/text">
+                    <TextView
+                      style="@style/blue_line"/>
+               <TextView
+                   android:text="@string/str_information"
+                   style="@style/contract" />
+                </LinearLayout>
+                <!--客户名称-->
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                   style="@style/contract_ll">
+                    <TextView
+                        android:text="@string/str_customer_designation"
+                        style="@style/contract_title" />
+                    <EditText
+                        android:id="@+id/et_company"
+                       style="@style/contract_edit" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                   style="@style/transverse_line"/>
+                <!--客户姓名-->
+                <LinearLayout
+                    style="@style/contract_ll">
+                    <TextView
+                        android:text="@string/str_customer_name"
+                        style="@style/contract_title" />
+
+                    <EditText
+                        style="@style/contract_edit"
+                        android:id="@+id/et_name" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    style="@style/transverse_line"/>
+                <!--联系方式-->
+                <LinearLayout
+                    style="@style/contract_ll">
+                    <TextView
+                        android:text="@string/str_contact_information"
+                        style="@style/contract_title" />
+                    <EditText
+                        android:id="@+id/et_tel"
+                        style="@style/contract_edit" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    style="@style/transverse_line"/>
+
+                <!--客户地址-->
+                <LinearLayout
+                   style="@style/contract_ll">
+                    <TextView
+                        android:text="@string/str_customer_address"
+                        style="@style/contract_title" />
+                    <EditText
+                        android:id="@+id/et_address"
+                        android:drawableRight="@mipmap/location"
+                        style="@style/contract_edit" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <!--合同信息-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:background="@color/write"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    style="@style/text">
+                    <TextView
+                        style="@style/blue_line"/>
+
+                    <TextView
+                        android:text="@string/str_contract"
+                        style="@style/contract"
+                        android:id="@+id/textView8" />
+                </LinearLayout>
+                    <!--银行账号-->
+                    <LinearLayout
+                        style="@style/contract_ll">
+                        <TextView
+                            android:text="@string/str_bank_account_number"
+                            style="@style/contract_title" />
+                        <EditText
+                            android:id="@+id/et_bank_account"
+                            style="@style/contract_edit" />
+                    </LinearLayout>
+
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    style="@style/transverse_line"/>
+
+                <!--开户人姓名-->
+                <LinearLayout
+                    style="@style/contract_ll">
+                    <TextView
+                        android:text="@string/str_bank_name"
+                        style="@style/contract_title" />
+                    <EditText
+                        android:id="@+id/et_account_holder"
+                        style="@style/contract_edit" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    style="@style/transverse_line"/>
+
+                <!--开户行-->
+                <LinearLayout
+                    style="@style/contract_ll">
+                    <TextView
+                        android:text="@string/str_bank_of_deposit"
+                        style="@style/contract_title" />
+                    <EditText
+                        android:id="@+id/et_bank_name"
+                        style="@style/contract_edit" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    style="@style/transverse_line"/>
+
+                <!--打款凭证-->
+                <LinearLayout
+                    style="@style/contract_ll">
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txtsize_42sp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_100dp"
+                        android:text="@string/voucher"
+                        style="@style/contract_title" />
+
+                    <TextView
+                        android:id="@+id/tx_ploadvoucher"
+                        android:background="@drawable/ripple_write"
+                        android:drawableLeft="@mipmap/uploadlogos"
+                         android:layout_width="wrap_content"
+                        android:textColor="@color/blue"
+                        android:gravity="center_vertical"
+                        android:textSize="12sp"
+                        android:text="@string/str_upload_voucher"
+                        android:layout_marginRight="@dimen/dimen_30dp"
+                         android:layout_height="@dimen/dimen_90dp"
+                        />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    style="@style/transverse_line"/>
+
+
+                <!--打款日期-->
+                <LinearLayout
+                    style="@style/contract_ll">
+                    <TextView
+                        android:text="@string/str_remits_time"
+                        style="@style/contract_title" />
+                    <TextView
+                        android:id="@+id/tx_remits_time"
+                        android:gravity="right|center_vertical"
+                        android:textColor="@color/hui2"
+                        android:textSize="@dimen/txtsize_36sp"
+                        android:layout_marginRight="@dimen/dimen_30dp"
+                        android:background="@drawable/ripple"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                       android:layout_height="@dimen/dimen_90dp" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    style="@style/transverse_line"/>
+
+
+                <!--合同照片-->
+                <LinearLayout
+                    style="@style/contract_ll">
+
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txtsize_36sp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_100dp"
+                        android:text="@string/str_contract_phonto"
+                        style="@style/contract_title"
+                        android:id="@+id/textView4" />
+
+                    <TextView
+                        android:id="@+id/tx_uploadcontract"
+                        android:background="@drawable/ripple_write"
+                        android:drawableLeft="@mipmap/uploadlogos"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/blue"
+                        android:gravity="center_vertical"
+                        android:textSize="12sp"
+                        android:text="@string/str_upload_contract"
+                        android:layout_marginRight="@dimen/dimen_30dp"
+                        android:layout_height="@dimen/dimen_90dp"
+                        />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    style="@style/transverse_line"/>
+
+                <!--合同金额-->
+                <LinearLayout
+                    style="@style/contract_ll">
+                    <TextView
+                        android:text="@string/str_contract_money"
+                        style="@style/contract_title" />
+                    <EditText
+                        android:id="@+id/et_con_money"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textColor="@color/hui2"
+                        android:textSize="12sp"
+                        android:gravity="right|center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_90dp"
+                         />
+                    <TextView
+                        android:layout_marginRight="@dimen/dimen_30dp"
+                        android:textColor="@color/hui2"
+                        android:text="@string/price_rmb"
+                        style="@style/contract_title" />
+                </LinearLayout>
+                <TextView
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    style="@style/transverse_line"/>
+
+
+                <!--签署时间-->
+                <LinearLayout
+                    style="@style/contract_ll">
+                    <TextView
+                        android:text="@string/str_signature_time"
+                        style="@style/contract_title" />
+                    <TextView
+                        android:id="@+id/tx_signature_time"
+                        android:gravity="right|center_vertical"
+                        android:textColor="@color/hui2"
+                        android:textSize="12sp"
+                        android:layout_marginRight="@dimen/dimen_30dp"
+                        android:background="@drawable/ripple"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/dimen_90dp" />
+                </LinearLayout>
+                </LinearLayout>
+
+            <!--收货信息-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_15dp"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:background="@color/write"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                style="@style/text">
+                <TextView
+                    style="@style/blue_line"/>
+
+                <TextView
+                    android:text="@string/str_recipient_information"
+                    style="@style/contract"
+                    />
+            </LinearLayout>
+
+
+            <!--收货人-->
+            <LinearLayout
+                style="@style/contract_ll">
+                <TextView
+                    android:text="@string/str_recipient_person"
+                    style="@style/contract_title" />
+                <EditText
+                    android:id="@+id/et_consignee"
+                    style="@style/contract_edit" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                style="@style/transverse_line"/>
+
+
+            <!--收货人联系方式-->
+            <LinearLayout
+                style="@style/contract_ll">
+                <TextView
+                    android:text="@string/str_contact_information"
+                    style="@style/contract_title" />
+                <EditText
+                    android:id="@+id/et_consignee_tel"
+                    style="@style/contract_edit" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                style="@style/transverse_line"/>
+
+
+            <!--收货地址-->
+            <LinearLayout
+                style="@style/contract_ll">
+                <TextView
+                    android:text="@string/str_recipient_adress"
+                    style="@style/contract_title" />
+                <EditText
+                    android:id="@+id/et_con_address"
+                    android:drawableRight="@mipmap/location"
+                    style="@style/contract_edit" />
+            </LinearLayout>
+        </LinearLayout>
+
+        </LinearLayout>
+    </com.fangfas.alincebusinessdaojobs.View.BounceScrollView>
+
+    <!--<Button-->
+        <!--android:textSize="@dimen/text_size"-->
+        <!--android:textColor="@color/write"-->
+        <!--android:text="@string/str_commint"-->
+        <!--android:background="@drawable/riple_red"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/dimen_48" />-->
+</LinearLayout>

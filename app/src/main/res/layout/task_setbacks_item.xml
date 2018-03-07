@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/huis"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_margin="@dimen/dimen_24dp"
+        app:cardCornerRadius="@dimen/dimen_18dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="@color/write"
+        android:layout_height="@dimen/dimen_270dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_weight="0.3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                android:id="@+id/mage"
+                android:transitionName="inverstment"
+                android:layout_margin="@dimen/dimen_15dp"
+                android:src="@mipmap/man"
+                android:layout_width="@dimen/dimen_90dp"
+                android:layout_height="@dimen/dimen_90dp"/>
+
+                <TextView
+                android:textSize="@dimen/txtsize_36sp"
+                android:id="@+id/name"
+                android:textColor="@color/heise"
+                android:text="张三丰"
+              style="@style/text"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:layout_toEndOf="@+id/mage" />
+                <TextView
+                android:layout_marginLeft="@dimen/dimen_30dp"
+                android:textColor="@color/heise"
+                android:id="@+id/phone"
+                android:textSize="@dimen/txtsize_36sp"
+                android:text="183-8598-5417"
+                style="@style/text"
+                android:layout_alignTop="@+id/name"
+                android:layout_toEndOf="@+id/name" />
+
+                <TextView
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/blue"
+                android:text="潜在客户：四川战三达到副食品快消有限公司"
+                android:layout_width="match_parent"
+                    android:textSize="@dimen/txtsize_45sp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dimen_60dp"
+                android:layout_alignStart="@+id/mage"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="0.7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                android:layout_weight="1"
+                android:layout_margin="@dimen/dimen_30dp"
+                android:textColor="@color/hui2"
+                android:textSize="@dimen/txtsize_36sp"
+                android:text="@string/str_present_setbacks"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               />
+                <TextView
+                    android:id="@+id/tx_state"
+                    android:textColor="@color/orange1"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/txtsize_60sp"
+                    android:text="@string/str_established"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

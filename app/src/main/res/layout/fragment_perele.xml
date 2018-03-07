@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/write"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dimen_30dp"
+        android:paddingLeft="@dimen/dimen_30dp"
+        android:paddingRight="@dimen/dimen_30dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_720dp">
+        <LinearLayout
+            android:id="@+id/lv"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--出厂价-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/txtsize_36sp"
+                    android:textColor="@color/black"
+                    android:text="@string/tx_exwprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tx_shop_price"
+                    android:textSize="@dimen/txtsize_36sp"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:textColor="@color/red_x"
+                    style="@style/text" />
+            </LinearLayout>
+            <!--建议零售价-->
+            <LinearLayout
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/txtsize_36sp"
+                    android:textColor="@color/black"
+                    android:text="@string/retail_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tx_suggest_price"
+                    android:textSize="@dimen/txtsize_36sp"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:textColor="@color/red_x"
+                    style="@style/text" />
+            </LinearLayout>
+            <!--提成比例-->
+            <LinearLayout
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/txtsize_36sp"
+                    android:textColor="@color/black"
+                    android:text="@string/tx_bonus_proportion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="@dimen/txtsize_36sp"
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    android:textColor="@color/black"
+                    android:text="首单打款金额*"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tx_ticheng_ratio"
+                    android:textSize="12sp"
+                    android:textColor="@color/red_x"
+                    style="@style/text" />
+            </LinearLayout>
+            <!--最低提成-->
+            <LinearLayout
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/txtsize_36sp"
+                    android:textColor="@color/black"
+                    android:text="@string/tx_bonus_minimum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tx_mix_ticheng_price"
+                    android:textSize="@dimen/txtsize_36sp"
+                    android:textColor="@color/red_x"
+                    style="@style/text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/txtsize_36sp"
+                    android:textColor="@color/black"
+                    android:text="@string/tx_notes_percentagelrele"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tx_mix_dakuan_price"
+                    android:textSize="@dimen/txtsize_36sp"
+                    android:textColor="@color/red_x"
+                    style="@style/text" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

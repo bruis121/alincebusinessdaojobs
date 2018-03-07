@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootview"
+    android:background="@color/write"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/write"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:id="@+id/returns"
+            android:layout_marginLeft="@dimen/dimen_30dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/return_black"
+            style="@style/text" />
+        <TextView
+            android:id="@+id/tx_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txtsize_42sp"
+            android:layout_centerInParent="true"
+            android:text="@string/str_application_cash"
+            style="@style/text" />
+        <TextView
+            android:layout_alignParentBottom="true"
+            style="@style/transverse_line" />
+    </RelativeLayout>
+
+    <com.fangfas.alincebusinessdaojobs.View.BounceScrollView
+        android:background="@color/hui9"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!--支付宝-->
+    <RelativeLayout
+        android:id="@+id/rl_alipay"
+        android:padding="@dimen/dimen_30dp"
+        android:background="@drawable/ripple_write"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/mage"
+            android:src="@mipmap/alipay"
+            style="@style/text"/>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/dimen_30dp"
+            android:layout_toEndOf="@+id/mage"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            style="@style/text">
+            <TextView
+                android:textSize="@dimen/txtsize_39sp"
+                android:textColor="@color/black1"
+                android:text="@string/str_alipay"
+                style="@style/text"
+                />
+            <TextView
+                android:id="@+id/aipay_isbinding"
+                android:textSize="@dimen/txtsize_36sp"
+                android:text="@string/str_nobinding"
+                android:textColor="@color/hui12"
+               style="@style/text"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ailipay_enter"
+            android:src="@mipmap/enter"
+            style="@style/text" />
+        <CheckBox
+            android:id="@+id/ailipay_check"
+            android:button="@null"
+            android:visibility="gone"
+            android:background="@drawable/check_selector"
+            android:layout_width="@dimen/dimen_60dp"
+            android:layout_height="@dimen/dimen_60dp" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/down_more"
+        android:orientation="vertical"
+        android:background="@drawable/ripple_write"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_120dp">
+        <TextView
+            style="@style/transverse_line" />
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="@dimen/dimen_30dp"
+            android:drawableRight="@mipmap/down_black"
+            android:text="@string/str_seemore"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <!--微信-->
+    <RelativeLayout
+        android:id="@+id/rl_weichant"
+        android:visibility="gone"
+        android:background="@drawable/ripple_write"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/transverse_line" />
+        <ImageView
+            android:layout_margin="@dimen/dimen_30dp"
+            android:id="@+id/weimage"
+            android:src="@mipmap/weichant"
+            style="@style/text"/>
+
+        <LinearLayout
+            android:layout_toEndOf="@+id/weimage"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+           style="@style/text">
+            <TextView
+                android:textSize="@dimen/txtsize_39sp"
+                android:textColor="@color/black1"
+                android:text="@string/str_weichant"
+                style="@style/text"
+                />
+            <TextView
+                android:id="@+id/weixin_isbinding"
+                android:textSize="@dimen/txtsize_36sp"
+                android:text="@string/str_nobinding"
+                android:textColor="@color/hui12"
+                style="@style/text"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_marginRight="@dimen/dimen_30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/weixin_enter"
+            android:src="@mipmap/enter"
+            style="@style/text" />
+
+            <CheckBox
+                android:id="@+id/weixin_check"
+                android:button="@null"
+                android:visibility="gone"
+                android:background="@drawable/check_selector"
+                android:layout_width="@dimen/dimen_60dp"
+                android:layout_height="@dimen/dimen_60dp" />
+        </FrameLayout>
+    </RelativeLayout>
+
+
+    <!--银行卡-->
+    <RelativeLayout
+        android:id="@+id/rl_bank"
+        android:visibility="gone"
+        android:background="@drawable/ripple_write"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+           style="@style/transverse_line" />
+        <ImageView
+            android:layout_margin="@dimen/dimen_30dp"
+            android:id="@+id/bankmage"
+            android:src="@mipmap/bank"
+            style="@style/text"/>
+
+        <LinearLayout
+            android:layout_toEndOf="@+id/bankmage"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+           style="@style/text">
+            <TextView
+                android:textSize="@dimen/txtsize_36sp"
+                android:textColor="@color/black1"
+                android:text="@string/str_bank"
+                style="@style/text"
+                />
+            <TextView
+                android:id="@+id/bank_isbinding"
+                android:textSize="@dimen/txtsize_36sp"
+                android:text="@string/str_nobinding"
+                android:textColor="@color/hui12"
+                style="@style/text"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_marginRight="@dimen/dimen_30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/bank_enter"
+            android:src="@mipmap/enter"
+            style="@style/text" />
+            <CheckBox
+                android:id="@+id/bank_check"
+                android:button="@null"
+                android:visibility="gone"
+                android:background="@drawable/check_selector"
+                android:layout_width="@dimen/dimen_60dp"
+                android:layout_height="@dimen/dimen_60dp" />
+        </FrameLayout>
+    </RelativeLayout>
+
+        <!--取现-->
+        <LinearLayout
+            android:id="@+id/ll_withdraw_cash"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:orientation="vertical"
+                android:background="@color/write"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--提现金额-->
+                <LinearLayout
+                    android:paddingLeft="@dimen/dimen_30dp"
+                    android:paddingRight="@dimen/dimen_30dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_150dp">
+                    <TextView
+                        android:textColor="@color/black1"
+                        android:textSize="@dimen/txtsize_36sp"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/withdraw_cash_sum"
+                       style="@style/text" />
+                    <EditText
+                        android:id="@+id/et_withdraw_cash_sum"
+                        android:inputType="number"
+                        android:paddingLeft="@dimen/dimen_30dp"
+                        android:background="@null"
+                        android:textColor="@color/black1"
+                        android:textSize="@dimen/txtsize_36sp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <TextView
+                    style="@style/transverse_line" />
+                <!--&lt;!&ndash;验证码&ndash;&gt;-->
+                <!--<LinearLayout-->
+                    <!--android:paddingLeft="@dimen/dimen_30dp"-->
+                    <!--android:paddingRight="@dimen/dimen_30dp"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/dimen_150dp">-->
+                    <!--<EditText-->
+                        <!--android:textColor="@color/black1"-->
+                        <!--android:layout_weight="0.6"-->
+                        <!--android:background="@null"-->
+                        <!--android:textSize="@dimen/txtsize_36sp"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:hint="@string/confirm_code"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"/>-->
+
+
+                    <!--<android.support.v7.widget.CardView-->
+                        <!--android:id="@+id/btn_code"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_marginTop="@dimen/dimen_15dp"-->
+                        <!--android:layout_marginBottom="@dimen/dimen_15dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--app:cardCornerRadius="0dp"-->
+                        <!--android:foreground="?android:attr/selectableItemBackground"-->
+                        <!--card_view:cardBackgroundColor="@color/hui15">-->
+                        <!--<TextView-->
+                            <!--android:gravity="center"-->
+                            <!--android:textColor="@color/write"-->
+                            <!--android:id="@+id/tx_code"-->
+                            <!--android:text="@string/get_code"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent" />-->
+                    <!--</android.support.v7.widget.CardView>-->
+                <!--</LinearLayout>-->
+            </LinearLayout>
+            <!--确认提现-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/btn_summit"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/dimen_150dp"
+                android:layout_marginLeft="@dimen/dimen_30dp"
+                android:layout_marginRight="@dimen/dimen_30dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_135dp"
+                app:cardCornerRadius="0dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                card_view:cardBackgroundColor="@color/yellow2">
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/write"
+                    android:text="@string/confirm_summit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+    </com.fangfas.alincebusinessdaojobs.View.BounceScrollView>
+
+</LinearLayout>

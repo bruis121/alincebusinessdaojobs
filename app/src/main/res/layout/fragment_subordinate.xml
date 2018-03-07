@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/huis"
+    android:orientation="vertical"
+    android:id="@+id/ll"
+    >
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.fangfas.alincebusinessdaojobs.View.MyScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/mytask_header"/>
+
+                <LinearLayout
+                    android:id="@+id/rg_snapbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_120dp"
+                    android:background="@color/write"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+
+
+                    <TextView
+                        android:background="@drawable/ripple_write"
+                        android:paddingLeft="@dimen/dimen_105dp"
+                        android:paddingRight="@dimen/dimen_105dp"
+                        android:drawableRight="@mipmap/mytask_down"
+                        android:id="@+id/btn_tab1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/time"
+                        android:textColor="@color/blue4" />
+
+                  <TextView
+                      style="@style/upright_line"/>
+
+
+                    <TextView
+                        android:background="@drawable/ripple_write"
+                        android:paddingLeft="@dimen/dimen_105dp"
+                        android:paddingRight="@dimen/dimen_105dp"
+                        android:drawableRight="@mipmap/mytask_down"
+                        android:id="@+id/btn_tab2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/amount_of_money"
+                        android:textColor="@color/blue4"  />
+
+                    <TextView
+                        style="@style/upright_line"/>
+
+                    <TextView
+                        android:background="@drawable/ripple_write"
+                        android:paddingLeft="@dimen/dimen_105dp"
+                        android:paddingRight="@dimen/dimen_105dp"
+                        android:drawableRight="@mipmap/mytask_down"
+                        android:id="@+id/btn_tab3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/name"
+                        android:textColor="@color/blue4"
+                        />
+
+                </LinearLayout>
+
+
+                <ListView
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:scrollbars="none"
+                    android:layout_height="@dimen/dimen_180dp"
+                    android:layoutAnimation="@anim/list_anim_layout"/>
+            </LinearLayout>
+
+
+        </com.fangfas.alincebusinessdaojobs.View.MyScrollView>
+
+        <LinearLayout
+            android:id="@+id/rg_snapbar_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_120dp"
+            android:background="@color/write"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="3">
+
+            <TextView
+                android:background="@drawable/ripple_write"
+                android:paddingLeft="@dimen/dimen_105dp"
+                android:paddingRight="@dimen/dimen_105dp"
+                android:drawableRight="@mipmap/mytask_down"
+                android:id="@+id/btn_tab1_top"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/time"
+                android:textColor="@color/blue4" />
+
+            <TextView
+                style="@style/upright_line"/>
+
+            <TextView
+                android:background="@drawable/ripple_write"
+                android:paddingLeft="@dimen/dimen_105dp"
+                android:paddingRight="@dimen/dimen_105dp"
+                android:drawableRight="@mipmap/mytask_down"
+                android:id="@+id/btn_tab2_top"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/amount_of_money"
+                android:textColor="@color/blue4" />
+
+            <TextView
+                style="@style/upright_line"/>
+
+            <TextView
+                android:background="@drawable/ripple_write"
+                android:paddingLeft="@dimen/dimen_105dp"
+                android:paddingRight="@dimen/dimen_105dp"
+                android:drawableRight="@mipmap/mytask_down"
+                android:id="@+id/btn_tab3_top"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/name"
+                android:textColor="@color/blue4" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

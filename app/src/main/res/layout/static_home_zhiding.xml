@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@color/huis"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_300dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/zhiding1"
+                android:layout_margin="@dimen/dimen_24dp"
+                app:cardCornerRadius="@dimen/dimen_15dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="@color/write"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_gravity="right"
+                    android:src="@mipmap/zhiding"
+                    style="@style/text"
+                    android:id="@+id/sticky" />
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    style="@style/text">
+                    <TextView
+                        android:id="@+id/blue"
+                        android:textSize="@dimen/txtsize_36sp"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/dimen_30dp"
+                        android:textColor="@color/write"
+                        android:text="@string/product_attractinvestment"
+                        android:background="@mipmap/lhsd_blue"
+                        style="@style/text"
+                        />
+                    <TextView
+                        android:id="@+id/name"
+                        android:textColor="@color/bule2"
+                        android:textSize="@dimen/txtsize_39sp"
+                        android:layout_marginTop="@dimen/dimen_30dp"
+                        android:layout_marginLeft="@dimen/dimen_15dp"
+                        android:layout_alignBaseline="@+id/blue"
+                        android:layout_alignBottom="@+id/blue"
+                        android:layout_toEndOf="@+id/blue"
+                        android:text="@string/str_shangyun"
+                        style="@style/text" />
+
+                    <TextView
+                        android:id="@+id/text_category"
+                        android:layout_below="@+id/name"
+                        android:maxLines="1"
+                        android:maxEms="15"
+                        android:ellipsize="end"
+                        android:layout_marginLeft="@dimen/dimen_30dp"
+                        android:layout_marginTop="@dimen/dimen_30dp"
+                        android:textSize="@dimen/txtsize_36sp"
+                        android:textColor="@color/hui2"
+                        android:text="@string/str_buxiandiqu"
+                        style="@style/text" />
+                    <LinearLayout
+                        android:id="@+id/ll"
+                        android:layout_below="@+id/text_category"
+                        android:layout_marginLeft="@dimen/dimen_30dp"
+                        android:orientation="horizontal"
+                        style="@style/text" >
+                        <TextView
+                            android:text="@string/receive_numberof"
+                            android:textSize="@dimen/txtsize_36sp"
+                            android:textColor="@color/hui2"
+                           style="@style/text" />
+                        <TextView
+                            android:id="@+id/tx_receive_numberof"
+                            android:textColor="@color/blue"
+                            android:layout_marginLeft="@dimen/dimen_15dp"
+                            android:text="@string/str_buxian"
+                            android:textSize="@dimen/txtsize_36sp"
+                            style="@style/text"/>
+                        <TextView
+                            android:layout_marginLeft="@dimen/dimen_60dp"
+                            android:text="@string/attract_investment_number"
+                            android:textSize="@dimen/txtsize_36sp"
+                            android:textColor="@color/hui2"
+                            style="@style/text"/>
+                        <TextView
+                            android:id="@+id/attract_investment_number"
+                            android:textColor="@color/blue"
+                            android:layout_marginLeft="@dimen/dimen_15dp"
+                            android:text="@string/str_buxian"
+                            android:textSize="@dimen/txtsize_36sp"
+                            style="@style/text" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:layout_alignBottom="@+id/text_category"
+                        android:layout_marginRight="@dimen/dimen_60dp"
+                        android:orientation="horizontal"
+                       style="@style/text">
+                        <TextView
+                            android:text="10"
+                            android:textColor="@color/orange"
+                            android:textSize="18sp"
+                           style="@style/text"
+                            />
+                        <TextView
+                            android:layout_marginLeft="@dimen/dimen_15dp"
+                            android:text="@string/price"
+                            android:textSize="@dimen/txtsize_36sp"
+                            android:textColor="@color/blue3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:background="@color/huis"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_300dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/zhiding2"
+                android:layout_margin="@dimen/dimen_24dp"
+                app:cardCornerRadius="@dimen/dimen_15dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="@color/write"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_gravity="right"
+                    android:src="@mipmap/zhiding"
+                  style="@style/text"
+                    android:id="@+id/sticky1" />
+                <RelativeLayout
+                    android:orientation="vertical"
+                   style="@style/text">
+                    <TextView
+                        android:id="@+id/yellow"
+                        android:textSize="@dimen/txtsize_36sp"
+                        android:layout_marginTop="@dimen/dimen_30dp"
+                        android:gravity="center"
+                        android:textColor="@color/write"
+                        android:text="@string/advertisement_attractinvestment"
+                        android:background="@mipmap/lhsd_yellow"
+                        style="@style/text"
+                        />
+
+                    <TextView
+                        android:id="@+id/text_category1"
+                        android:layout_below="@+id/name1"
+                        android:maxLines="1"
+                        android:maxEms="15"
+                        android:ellipsize="end"
+                        android:layout_marginLeft="@dimen/dimen_30dp"
+                        android:layout_marginTop="@dimen/dimen_30dp"
+                        android:textSize="@dimen/txtsize_36sp"
+                        android:textColor="@color/hui2"
+                        android:text="@string/str_buxiandiqu"
+                       style="@style/text" />
+                    <LinearLayout
+                        android:id="@+id/ll1"
+                        android:layout_below="@+id/text_category1"
+                        android:layout_marginLeft="@dimen/dimen_30dp"
+                        android:orientation="horizontal"
+                       style="@style/text">
+                        <TextView
+                            android:text="@string/receive_numberof"
+                            android:textSize="@dimen/txtsize_36sp"
+                            android:textColor="@color/hui2"
+                            style="@style/text"/>
+                        <TextView
+                            android:id="@+id/tx_receive_numberof1"
+                            android:textColor="@color/blue"
+                            android:layout_marginLeft="@dimen/dimen_15dp"
+                            android:text="@string/str_buxian"
+                            android:textSize="@dimen/txtsize_36sp"
+                           style="@style/text"/>
+                        <TextView
+                            android:layout_marginLeft="@dimen/dimen_60dp"
+                            android:text="@string/attract_investment_number"
+                            android:textSize="@dimen/txtsize_36sp"
+                            android:textColor="@color/hui2"
+                          style="@style/text"/>
+                        <TextView
+                            android:id="@+id/attract_investment_number1"
+                            android:textColor="@color/blue"
+                            android:layout_marginLeft="@dimen/dimen_15dp"
+                            android:text="@string/str_buxian"
+                            android:textSize="@dimen/txtsize_36sp"
+                           style="@style/text" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:layout_alignBottom="@+id/text_category1"
+                        android:layout_marginRight="@dimen/dimen_60dp"
+                        android:orientation="horizontal"
+                       style="@style/text">
+                        <TextView
+                            android:text="5"
+                            android:textColor="@color/orange"
+                            android:textSize="@dimen/txtsize_54sp"
+                          style="@style/text"
+                            />
+                        <TextView
+                            android:layout_marginLeft="@dimen/dimen_15dp"
+                            android:text="@string/price"
+                            android:textSize="@dimen/txtsize_36sp"
+                            android:textColor="@color/blue3"
+                          style="@style/text" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/name1"
+                        android:textColor="@color/bule2"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="@dimen/dimen_15dp"
+                        android:text="@string/str_zhaoshang"
+                        style="@style/text"
+                        android:layout_alignBaseline="@+id/yellow"
+                        android:layout_alignBottom="@+id/yellow"
+                        android:layout_toEndOf="@+id/yellow" />
+
+
+                </RelativeLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

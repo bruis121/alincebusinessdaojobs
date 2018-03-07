@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/huis"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <com.fangfas.alincebusinessdaojobs.View.BounceScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:background="@color/write"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tx_code"
+                android:textSize="12sp"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:layout_marginLeft="@dimen/dimen_30dp"
+              style="@style/text" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/mage"
+                android:layout_margin="@dimen/dimen_30dp"
+                android:src="@mipmap/default_image"
+                android:background="@drawable/shap_image_box"
+                android:layout_width="@dimen/dimen_200dp"
+                android:layout_height="@dimen/dimen_250dp"/>
+
+                <RelativeLayout
+                    android:paddingTop="@dimen/dimen_30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                    android:textSize="@dimen/txtsize_36sp"
+                    android:id="@+id/name"
+                    android:textColor="@color/blue7"
+                    style="@style/text"
+                    />
+
+                    <!--品名-->
+                    <LinearLayout
+                        android:id="@+id/ll_product_name"
+                        android:layout_marginTop="@dimen/dimen_15dp"
+                        android:layout_below="@id/name"
+                        android:orientation="horizontal"
+                        style="@style/text">
+                    <TextView
+                        android:textColor="@color/hui2"
+                        android:textSize="@dimen/txtsize_36sp"
+                        android:text="@string/str_product_name"
+                       style="@style/text"
+                      />
+                        <TextView
+                            android:id="@+id/brand_name"
+                            android:textSize="@dimen/txtsize_36sp"
+                            android:textColor="@color/hui"
+                           style="@style/text" />
+                    </LinearLayout>
+
+
+                    <!--香型-->
+                    <LinearLayout
+                        android:id="@+id/ll_aroma"
+                        android:layout_marginTop="@dimen/dimen_15dp"
+                        android:layout_below="@id/ll_product_name"
+                        android:orientation="horizontal"
+                        style="@style/text">
+                    <TextView
+                        android:textColor="@color/hui2"
+                        android:textSize="@dimen/txtsize_36sp"
+                        android:text="@string/str_aroma"
+                       style="@style/text" />
+                        <TextView
+                            android:id="@+id/tx_xiangxing"
+                            android:textSize="@dimen/txtsize_36sp"
+                            android:textColor="@color/hui"
+                            style="@style/text" />
+                    </LinearLayout>
+
+
+                    <!--度数-->
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/dimen_15dp"
+                        android:layout_below="@id/ll_aroma"
+                        android:orientation="horizontal"
+                        style="@style/text">
+                        <TextView
+                            android:textColor="@color/hui2"
+                            android:textSize="@dimen/txtsize_36sp"
+                            android:text="@string/str_degree"
+                            style="@style/text" />
+                        <TextView
+                            android:id="@+id/tx_dushu"
+                            android:textSize="@dimen/txtsize_36sp"
+                            android:textColor="@color/hui"
+                            style="@style/text" />
+                    </LinearLayout>
+
+
+                    <!--净含量-->
+                    <LinearLayout
+                        android:id="@+id/ll_weight"
+                        android:layout_alignBottom="@id/ll_product_name"
+                        android:layout_marginRight="@dimen/dimen_210dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/dimen_15dp"
+                        android:orientation="horizontal"
+                        style="@style/text">
+                        <TextView
+                            android:textColor="@color/hui2"
+                            android:textSize="@dimen/txtsize_36sp"
+                            android:text="@string/str_weight"
+                            style="@style/text" />
+                        <TextView
+                            android:id="@+id/tx_jinghanliang"
+                            android:textSize="@dimen/txtsize_36sp"
+                            android:textColor="@color/hui"
+                            style="@style/text" />
+                    </LinearLayout>
+                    <!--产地-->
+                    <LinearLayout
+                        android:id="@+id/ll_place"
+                        android:layout_alignStart="@id/ll_weight"
+                        android:layout_below="@id/ll_weight"
+                        android:layout_marginTop="@dimen/dimen_15dp"
+                        android:orientation="horizontal"
+                        style="@style/text">
+                        <TextView
+                            android:textColor="@color/hui2"
+                            android:textSize="@dimen/txtsize_36sp"
+                            android:text="@string/str_place_of_production"
+                            style="@style/text" />
+                        <TextView
+                            android:id="@+id/tx_chandi"
+                            android:textSize="@dimen/txtsize_36sp"
+                            android:textColor="@color/hui"
+                            style="@style/text" />
+                    </LinearLayout>
+
+                    <!--厂家-->
+                    <LinearLayout
+                        android:layout_alignStart="@id/ll_place"
+                        android:layout_below="@id/ll_place"
+                        android:layout_marginTop="@dimen/dimen_15dp"
+                        android:orientation="horizontal"
+                        style="@style/text">
+                        <TextView
+                            android:textColor="@color/hui2"
+                            android:textSize="@dimen/txtsize_36sp"
+                            android:text="@string/str_factoryname"
+                            style="@style/text" />
+                        <TextView
+                            android:id="@+id/tx_changjia"
+                            android:textSize="@dimen/txtsize_36sp"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:textColor="@color/hui"
+                            android:text="江苏洋河酒厂"
+                            style="@style/text" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:paddingTop="@dimen/dimen_30dp"
+                android:paddingBottom="@dimen/dimen_30dp"
+                android:paddingLeft="@dimen/dimen_30dp"
+                android:paddingRight="@dimen/dimen_30dp"
+                android:background="@color/blue6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    style="@style/text"
+                    android:orientation="horizontal"
+                    android:id="@+id/linearLayout6">
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txtsize_36sp"
+                        android:text="@string/str_fist_order"
+                        style="@style/text" />
+                    <TextView
+                        android:id="@+id/tx_first_com"
+                        android:layout_marginLeft="@dimen/dimen_15dp"
+                        android:textSize="@dimen/txtsize_42sp"
+                        android:textColor="@color/orange"
+                        style="@style/text" />
+                    <TextView
+                        android:id="@+id/employer_frist"
+                        android:textSize="@dimen/txtsize_33sp"
+                        android:textColor="@color/black"
+                        android:text="@string/price_rmb"
+                        style="@style/text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout7"
+                    android:layout_marginLeft="@dimen/dimen_120dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/linearLayout6"
+                    android:orientation="horizontal"
+                    style="@style/text">
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txtsize_36sp"
+                        android:text="@string/percentage"
+                        style="@style/text"
+                        />
+                    <TextView
+                        android:id="@+id/ticheng"
+                        android:layout_marginLeft="@dimen/dimen_15dp"
+                        android:textSize="@dimen/txtsize_42sp"
+                        android:textColor="@color/orange"
+                        style="@style/text" />
+                    <TextView
+                        android:id="@+id/employer_ticheng"
+                        android:textSize="@dimen/txtsize_33sp"
+                        android:textColor="@color/black"
+                        android:text="@string/price_rmb"
+                        style="@style/text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dimen_60dp"
+                    android:layout_below="@+id/linearLayout6"
+                    android:layout_alignParentStart="true"
+                    android:orientation="horizontal"
+                    style="@style/text">
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txtsize_36sp"
+                        android:text="@string/attract_investment_number"
+                        style="@style/text"
+                        />
+                    <TextView
+                      android:id="@+id/tx_zhaoshangrenshu"
+                        android:layout_marginLeft="@dimen/dimen_15dp"
+                        android:textSize="@dimen/txtsize_42sp"
+                        android:textColor="@color/orange"
+                        android:text="3"
+                        style="@style/text" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dimen_60dp"
+                    android:layout_alignStart="@+id/linearLayout7"
+                    android:layout_below="@+id/linearLayout7"
+                    style="@style/text">
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txtsize_36sp"
+                        android:text="@string/str_region"
+                        style="@style/text"
+                        />
+                    <TextView
+                        android:id="@+id/tx_area_names"
+                        android:layout_marginLeft="@dimen/dimen_15dp"
+                        android:textSize="@dimen/txtsize_42sp"
+                        android:textColor="@color/orange"
+                        android:text="四川"
+                        style="@style/text" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <!--意向客户-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/dimen_30dp"
+               style="@style/text">
+                <TextView
+                    android:textColor="@color/hui2"
+                    android:textSize="@dimen/txtsize_36sp"
+                    android:text="@string/str_intention_customer"
+                    style="@style/text" />
+                <TextView
+                    android:id="@+id/tx_cus_company"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:textSize="@dimen/txtsize_36sp"
+                    android:textColor="@color/blue7"
+                    style="@style/text"/>
+            </LinearLayout>
+
+            <!--客户地址-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/dimen_30dp"
+               style="@style/text">
+                <TextView
+                    android:textColor="@color/hui2"
+                    android:textSize="@dimen/txtsize_36sp"
+                    android:text="@string/str_customer_address"
+                    style="@style/text" />
+
+                <TextView
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="13sp"
+                    android:textColor="@color/blue7"
+                    style="@style/text"
+                    android:id="@+id/tx_cus_address" />
+            </LinearLayout>
+            <!--客户经理-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/dimen_30dp"
+               style="@style/text">
+                <TextView
+                    android:textColor="@color/hui2"
+                    android:textSize="@dimen/txtsize_36sp"
+                    android:text="@string/str_customer_manager"
+                    style="@style/text" />
+                <TextView
+                    android:id="@+id/tx_cus_name"
+                    android:textSize="@dimen/txtsize_36sp"
+                    android:textColor="@color/blue7"
+                    android:text="李经理"
+                    style="@style/text"/>
+
+                <TextView
+                    android:textColor="@color/hui2"
+                    android:layout_marginLeft="@dimen/dimen_340dp"
+                    android:text="@string/str_contact_information"
+                    android:textSize="@dimen/txtsize_36sp"
+                    style="@style/text"/>
+                <TextView
+                    android:id="@+id/tx_tel"
+                    android:textColor="@color/blue7"
+                    android:textSize="@dimen/txtsize_36sp"
+                    style="@style/text"/>
+            </LinearLayout>
+        </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_60dp" />
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_210dp"
+        android:scrollbars="none"
+        android:divider="@null" >
+    </ListView>
+
+    </LinearLayout>
+    </com.fangfas.alincebusinessdaojobs.View.BounceScrollView>
+    <Button
+        android:id="@+id/btn_abandoned"
+        android:background="@color/red_x1"
+        android:textColor="@color/write"
+        android:textSize="@dimen/txtsize_36sp"
+        android:text="@string/str_abandoned"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_150dp" />
+</LinearLayout>

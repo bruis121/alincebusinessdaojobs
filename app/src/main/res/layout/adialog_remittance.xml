@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_360dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_margin="@dimen/dimen_60dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="@dimen/dimen_18dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="@color/write"
+        android:layout_height="@dimen/dimen_360dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_120dp"
+            android:textSize="@dimen/txtsize_36sp"
+            android:text="请输入打款金额"
+            android:gravity="center"
+            android:visibility="visible" />
+        <LinearLayout
+            android:id="@+id/content"
+            android:background="@color/write"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/dimen_120dp"
+            android:orientation="horizontal"
+            android:gravity="center" >
+            <EditText
+                android:id="@+id/message"
+                android:layout_weight="0.4"
+                android:gravity="right|center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                />
+            <TextView
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_weight="0.6"
+                android:textSize="@dimen/txtsize_36sp"
+                android:text="@string/price_rmb"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/hui3" />
+
+
+            <Button
+                android:text="@string/confirm"
+                android:layout_alignParentRight="true"
+                android:id="@+id/positiveButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_135dp"
+                android:background="@drawable/ripple_blue"
+                android:textColor="@color/write"
+                />
+
+
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

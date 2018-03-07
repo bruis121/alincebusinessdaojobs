@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <RelativeLayout
+       android:background="@color/blue"
+       android:layout_width="match_parent"
+       android:layout_height="?attr/actionBarSize">
+      <ImageView
+          android:id="@+id/returns"
+          android:src="@mipmap/returns1"
+          android:background="@drawable/ripple_blue"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="@dimen/dimen_30dp"
+          android:padding="@dimen/dimen_30dp"
+          android:layout_width="wrap_content"
+          android:scaleType="centerCrop"
+          android:layout_height="@dimen/dimen_120dp" />
+      <TextView
+          android:id="@+id/title"
+          android:layout_centerInParent="true"
+          android:textColor="@color/write"
+          android:textSize="@dimen/txtsize_42sp"
+          android:text="@string/str_look"
+          style="@style/text" />
+   </RelativeLayout>
+
+   <uk.co.senab.photoview.PhotoView
+       android:id="@+id/my_image"
+       android:transitionName="robot"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" />
+</LinearLayout>

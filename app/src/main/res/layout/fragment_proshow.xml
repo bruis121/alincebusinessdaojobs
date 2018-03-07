@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/ll_show"
+    android:layout_height="match_parent">
+
+    <com.fangfas.alincebusinessdaojobs.View.CustWebView
+        android:id="@+id/sc"
+        android:layout_width="match_parent"
+        android:layout_height="560dp">
+        <WebView
+            android:id="@+id/webView"
+            android:background="@color/blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.fangfas.alincebusinessdaojobs.View.CustWebView>
+</LinearLayout>

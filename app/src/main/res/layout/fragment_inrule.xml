@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/huis"
+    android:layout_height="match_parent">
+
+    <com.fangfas.alincebusinessdaojobs.View.BounceScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll"
+            android:visibility="invisible"
+            android:padding="@dimen/dimen_60dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textSize="@dimen/txtsize_48sp"
+                android:textColor="@color/heise"
+                android:text="@string/str_ticheng_title"
+                style="@style/text" />
+            <LinearLayout
+                android:paddingTop="@dimen/dimen_60dp"
+                android:orientation="horizontal"
+                style="@style/text">
+                <TextView
+                    android:textSize="@dimen/txtsize_36sp"
+                    android:textColor="@color/heise"
+                    android:text="@string/str_ticheng"
+                    style="@style/text" />
+                <TextView
+                    android:textSize="@dimen/txtsize_36sp"
+                    android:textColor="@color/orange1"
+                    android:text="20%"
+                    style="@style/text" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.fangfas.alincebusinessdaojobs.View.BounceScrollView>
+</LinearLayout>

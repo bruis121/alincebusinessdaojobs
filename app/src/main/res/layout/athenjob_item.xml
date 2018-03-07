@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_210dp"
+    android:paddingLeft="@dimen/dimen_15dp"
+    android:paddingRight="@dimen/dimen_15dp"
+    android:gravity="center_vertical"
+     >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/time"
+        android:textSize="@dimen/txtsize_36sp"
+        android:textColor="@color/hui2"
+        style="@style/text" />
+
+        <TextView
+            android:textSize="@dimen/txtsize_36sp"
+            android:textColor="@color/hui2"
+           style="@style/text"
+            android:id="@+id/cats"
+            />
+    <TextView
+        android:id="@+id/summary"
+        android:textSize="@dimen/txtsize_36sp"
+        android:textColor="@color/hui2"
+        android:lines="2"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

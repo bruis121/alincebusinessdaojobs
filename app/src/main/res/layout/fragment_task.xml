@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/huis"
+    android:id="@+id/cl_task"
+    android:layout_height="match_parent">
+
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:id="@+id/ltab"
+            android:orientation="vertical"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_120dp">
+            <LinearLayout
+                android:background="@color/write"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--进行中-->
+                <TextView
+                    android:id="@+id/ongoing"
+                    android:layout_weight="1"
+                    android:text="@string/ongoing"
+                    android:textColor="@color/bluex"
+                    android:textSize="13sp"
+                    android:background="@drawable/ripple"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:background="@color/huis"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent" />
+                <!--已完成-->
+                <TextView
+                    android:id="@+id/complete"
+                    android:layout_weight="1"
+                    android:text="@string/complete"
+                    android:gravity="center"
+                    android:background="@drawable/ripple"
+                    android:textColor="@color/bluex"
+                    android:textSize="13sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:background="@color/huis"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent" />
+                <!--已过期-->
+                <TextView
+                    android:id="@+id/be_overdue"
+                    android:layout_weight="1"
+                    android:background="@drawable/ripple"
+                    android:text="@string/be_overdue"
+                    android:gravity="center"
+                    android:textColor="@color/bluex"
+                    android:textSize="13sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <TextView
+                android:background="@color/huis"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/list"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutAnimation="@anim/list_anim_layout"/>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
